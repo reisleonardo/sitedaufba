@@ -50,7 +50,7 @@
       cargos: [["Diretor-geral", "Bruno Henrique da Ressurreição da Silva"], ["Diretor-geral", "Leonardo Reis da Conceição"], ["Diretora financeira", "Maria Júlia Sena Almeida"]],
       membros: ["Bruna Souza Martins - Diretoria de Ações Afirmativas", "Maria Eduarda Pinto Maurício - Diretoria de Assuntos Acadêmicos e Relações Institucionais", "Felipe Santos de Jesus - Diretoria Cultural e Científica", "Tayan Floripes Oliveira Bernardo - Diretoria de Marketing"] },
     { nome: "Força ILTDA", ano: "2023", img: "https://i.imgur.com/MGCz3gq.png", carta: "https://www.instagram.com/p/Cv_M5SRgQdC/?img_index=1",
-      cargos: [["Diretora-geral", "Emilly Carvalho"], ["Diretora-geral", "Yassmin"], ["Diretor-geral", "Yago D'Avila"]], membros: ["Diretora de Políticas e Movimentos Sociais - Laura Fernandes", "Diretor Financeiro - Bruno Ricardo", "Diretora Financeira - Maira Lima", "Diretora de Comunicação e Marketing - Greice Kelly", "Diretora Científica e Cultural - Bruna Martins"] },
+      cargos: [["Diretora-geral", "Emilly Carvalho"], ["Diretora-geral", "Yassmin Solano"], ["Diretor-geral", "Yago D'Avila"]], membros: ["Diretora de Políticas e Movimentos Sociais - Laura Fernandes", "Diretor Financeiro - Bruno Ricardo", "Diretora Financeira - Maira Lima", "Diretora de Comunicação e Marketing - Greice Kelly", "Diretora Científica e Cultural - Bruna Martins"] },
     { nome: "...", ano: "...", img: "#", carta: "#",
       cargos: [["...", "..."], ["...", "..."], ["...", "..."]], membros: ["..."] },
   ];
