@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DACIC | UFBA</title>
+  <meta name="description" content="Portal do DACIC: trilhas de letramento contábil, grade curricular, gestões, recursos e avisos.">
+  <link rel="icon" href="images/dalogo.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio">
+        <img class="logo" src="images/dalogo.png" alt="Logo do DACIC">
+        <span class="brand-text"><strong>DACIC</strong><small>Diretório Acadêmico de Ciências Contábeis</small></span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+      <nav id="menu" class="nav" aria-label="Principal">
+        <ul>
+          <li><a href="#inicio" data-route="inicio">Início</a></li>
+          <li><a href="#trilhas" data-route="trilhas">Trilhas</a></li>
+          <li><a href="#grade" data-route="grade">Grade curricular</a></li>
+          <li><a href="#portal" data-route="portal">Portal e recursos</a></li>
+          <li><a href="#sobre" data-route="sobre">Sobre nós</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- INÍCIO -->
+    <section id="inicio" class="page hero" data-page>
+      <div class="container hero-grid">
+        <figure class="hero-photo"><img src="images/fachada.webp" alt="Fachada da Faculdade de Ciências Contábeis"></figure>
+        <div class="hero-panel">
+          <p class="eyebrow">Diretório Acadêmico de Ciências Contábeis</p>
+          <h1>Sua graduação em Ciências Contábeis, <em>em um só lugar</em></h1>
+          <p class="lead">Trilhas de estudo em dados, grade curricular interativa, portal de recursos, gestões e avisos da faculdade.</p>
+          <div class="actions">
+            <a class="btn btn-wine" href="#gestoes">Nossas gestões <span aria-hidden="true">→</span></a>
+            <button class="btn btn-wine" data-modal="historia">Nossa história <span aria-hidden="true">→</span></button>
+            <a class="btn btn-wine" href="https://drive.google.com/file/d/1F0lNMh0jEKCmFemkXWsV_GSt0gLKOA6A/view?usp=drive_link" target="_blank" rel="noopener">Cartilha do calouro</a>
+            <a class="btn btn-wa" href="https://whatsapp.com/channel/0029Vb966OcEVccRb402v62t" target="_blank" rel="noopener">Canal de avisos no WhatsApp</a>
+            <a class="btn btn-wa" href="https://chat.whatsapp.com/LAAfAGs4dEb18i3B6zUuJo" target="_blank" rel="noopener">Comunidade do WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <div class="container shortcuts">
+        <a class="short" href="#trilhas"><b>Trilhas</b><span>Estatística, Excel, Power BI, Python, SQL e storytelling</span></a>
+        <a class="short" href="#grade"><b>Grade curricular</b><span>Pré-requisitos, progresso e créditos</span></a>
+        <a class="short" href="#portal"><b>Portal e recursos</b><span>Avisos, modelos e FAQ</span></a>
+      </div>
+    </section>
+
+    <!-- TRILHAS -->
+    <section id="trilhas" class="page" data-page hidden>
+      <div class="banner"><div class="container">
+        <p class="eyebrow">Catálogo de estudos</p>
+        <h2>Trilhas: dados e análise para a contabilidade</h2>
+        <p class="lead">Vídeos e playlists reunidos por tema. Escolha uma categoria e assista sem sair do portal.</p>
+      </div></div>
+      <div class="container section">
+        <div id="cat-filtros" class="cat-filtros" role="group" aria-label="Filtrar por categoria"></div>
+        <div id="cat-lista"></div>
+      </div>
+    </section>
+
+    
+<!-- GRADE -->
+    <section id="grade" class="page" data-page hidden>
+      <div class="banner"><div class="container">
+        <p class="eyebrow">Acompanhamento</p>
+        <h2>Grade curricular</h2>
+        <p class="lead">Marque o que já concluiu e veja pré-requisitos e disciplinas liberadas. Cada disciplina vale 1 crédito.</p>
+      </div></div>
+      <div class="container section">
+        <div class="panel">
+          <div class="stats" id="gr-stats"></div>
+          <div class="progress"><div id="gr-bar"></div></div>
+          <div class="legend-row">
+          <div class="legend">
+            <span class="tag done">Concluída</span><span class="tag avail">Disponível</span><span class="tag block">Bloqueada</span>
+            <span class="tag r-pre">Pré-requisito</span><span class="tag r-nxt">Destranca</span>
+          </div>
+          <button id="gr-clear" class="btn btn-wine btn-sm" type="button">Limpar escolhas</button>
+          </div>
+          <p id="gr-info" class="info"></p>
+        </div>
+        <div id="gr-grid" class="gr-grid"></div>
+      </div>
+    </section>
+
+    
+<!-- PORTAL -->
+    <section id="portal" class="page" data-page hidden>
+      <div class="banner"><div class="container"><p class="eyebrow">Recursos</p><h2>Portal e recursos</h2>
+        <p class="lead">Avisos, perguntas frequentes, links úteis e modelos de documentos para o dia a dia da graduação.</p></div></div>
+      <div class="container section portal-grid">
+        <div>
+          <div class="panel"><h3>Quadro de avisos</h3><ul id="news" class="news"></ul></div>
+          <div class="panel"><h3>Perguntas frequentes</h3><div id="faq"></div></div>
+        </div>
+        <div>
+          <div class="panel"><h3>Links úteis</h3><ul id="links" class="plist"></ul></div>
+          <div class="panel"><h3>Modelos de documentos</h3><ul id="docs" class="plist"></ul></div>
+        </div>
+      </div>
+    </section>
+
+    
+<!-- SOBRE -->
+    <section id="sobre" class="page" data-page hidden>
+      <div class="banner"><div class="container">
+        <p class="eyebrow">Quem somos</p><h2>Sobre nós</h2>
+        <p class="lead">O DACIC representa os estudantes de Ciências Contábeis, promovendo integração, voz ativa e acesso a oportunidades.</p>
+        <a class="btn btn-sand" href="#gestoes">Conheça as gestões</a>
+      </div></div>
+    </section>
+
+    <!-- GESTÕES -->
+    <section id="gestoes" class="page" data-page hidden>
+      <div class="banner"><div class="container">
+        <p class="eyebrow">Sobre nós</p><h2>Gestões do DACIC</h2>
+        <p class="lead">A linha do tempo de quem já construiu o diretório acadêmico, gestão após gestão.</p>
+      </div></div>
+      <div class="container section">
+        <div id="g-atual"></div>
+        <h2 class="sub">Gestões anteriores</h2>
+        <div id="g-ant" class="g-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img class="logo" src="images/dalogo.png" alt="">
+      <address>
+        <p><strong>Endereço:</strong> Av. Reitor Miguel Calmon, s/n – Canela, Salvador – BA, 40110-100</p>
+        <p><strong>E-mail:</strong> <a href="mailto:fccdacic@gmail.com">fccdacic@gmail.com</a></p>
+        <p><strong>Site desenvolvido por: <a href="https://github.com/ReisLeonardo">Leonardo Reis</a></strong></p>
+      </address>
+      <a class="social" href="https://www.instagram.com/dacic.ufba/" target="_blank" rel="noopener" aria-label="Instagram do DACIC">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <dialog id="modal" aria-labelledby="modal-title">
+    <h2 id="modal-title"></h2><div id="modal-body"></div>
+    <button class="btn btn-wine" data-close>Fechar</button>
+  </dialog>
+  <dialog id="player" aria-labelledby="p-title">
+    <div class="pframe"><iframe id="p-frame" title="Reprodutor do YouTube" allow="accelerometer; autoplay; encrypted-media; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    <h3 id="p-title"></h3>
+    <p id="p-canal" class="cat-desc"></p>
+    <div class="p-actions"><a id="p-yt" class="btn btn-sand" target="_blank" rel="noopener">Abrir no YouTube</a><button class="btn btn-wine" data-pclose>Fechar</button></div>
+  </dialog>
+</body>
+</html>
