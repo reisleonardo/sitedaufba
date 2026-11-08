@@ -74,19 +74,192 @@
   //   Playlist: { url: "https://www.youtube.com/playlist?list=ID", titulo: "Título", canal: "Nome do canal", capa: "ID de um vídeo da playlist" }
   // "capa" é opcional e define a miniatura da playlist. Links youtu.be e embed também funcionam.
   const CATEGORIAS = [
-    { id: "estatistica", nome: "Estatística", desc: "Fundamentos, probabilidade e inferência aplicados a negócios e auditoria.", itens: [] },
+    { id: "contabilidade", nome: "Contabilidade Geral", desc: "Mensuração, controle patrimonial e conformidade legal aplicados à gestão financeira e tomada de decisão.", itens: [
+      {
+        url: "https://www.youtube.com/watch?v=D_XmlT15-rE",
+        titulo: "Contabilidade Geral Básica | Aula 01 | Parte 01 | Loberto Sasaki",
+        canal: "Nata Conta"
+      },
+      {
+        url: "https://www.youtube.com/watch?v=4P3YtqrsE3E",
+        titulo: "Contabilidade Geral Básica | Aula 01 | Parte 02 | Loberto Sasaki",
+        canal: "Nata Conta"
+      },
+      {
+        url: "https://www.youtube.com/watch?v=tfBM7G4c2cY",
+        titulo: "Contabilidade Geral Básica | Aula 01 | Parte 03 | Loberto Sasaki",
+        canal: "Nata Conta"
+      },
+      {
+        url: "https://www.youtube.com/watch?v=xdvHOOcZba8",
+        titulo: "Contabilidade Geral Básica | Aula 01 | Parte 04 | Loberto Sasaki",
+        canal: "Nata Conta"
+      },
+      {
+        url: "https://www.youtube.com/watch?v=yu-XlFHB6IY",
+        titulo: "Contabilidade Geral Básica | Aula 02 | Parte 01 | Loberto Sasaki",
+        canal: "Nata Conta"
+      },
+      {
+        url: "https://www.youtube.com/watch?v=DFRm-3Mzn6c",
+        titulo: "Contabilidade Geral Básica | Aula 02 | Parte 02 | Loberto Sasaki",
+        canal: "Nata Conta"
+      },
+      {
+        url: "https://www.youtube.com/watch?v=GLaYlsiNdFU",
+        titulo: "Contabilidade Geral Básica | Aula 02 | Parte 03 | Loberto Sasaki",
+        canal: "Nata Conta"
+      },
+      {
+        url: "https://www.youtube.com/watch?v=w2ORwmnqIdo",
+        titulo: "Contabilidade Geral Básica | Aula 02 | Parte 04 | Loberto Sasaki",
+        canal: "Nata Conta"
+      },
+      {
+        url: "https://www.youtube.com/watch?v=pTyAGr4OgOc",
+        titulo: "Contabilidade Geral Básica | Aula 03 | Parte 01 | Loberto Sasaki",
+        canal: "Nata Conta"
+      },
+      {
+        url: "https://www.youtube.com/watch?v=61kC3Nw0fQw",
+        titulo: "Contabilidade Geral Básica | Aula 03 | Parte 02 | Loberto Sasaki",
+        canal: "Nata Conta"
+      },
+      {
+        url: "https://www.youtube.com/watch?v=wc6Pt_k5doo",
+        titulo: "Contabilidade Geral Básica | Aula 03 | Parte 03 | Loberto Sasaki",
+        canal: "Nata Conta"
+      },
+      {
+        url: "https://www.youtube.com/watch?v=hDUALEo3mt4",
+        titulo: "Contabilidade Geral Básica | Aula 03 | Parte 04 | Loberto Sasaki",
+        canal: "Nata Conta"
+      }
+    ] },
+    { id: "reformatributaria", nome: "Reforma Tributária", desc: "Impactos regulatórios, transição de regimes e simplificação de impostos aplicados ao planejamento fiscal e competitividade empresarial.", itens: [
+      {
+        url: "https://www.youtube.com/watch?v=OVf0x7KKhnI",
+        titulo: "Entenda como funciona a reforma tributária",
+        canal: "g1"
+      },
+      {
+        url: "https://www.youtube.com/watch?v=oT5aJLkB_6Q",
+        titulo: "Reforma Tributária | Guia Completo | Análises Técnica, Econômica e Política",
+        canal: "Loberto Sasaki"
+      }
+    ] },
+    { id: "estatistica", nome: "Estatística", desc: "Fundamentos, probabilidade e inferência aplicados a negócios e auditoria.", itens: [
+      {
+        url: "https://www.youtube.com/playlist?list=PLX-4skTGVrWUNh2VGFIyoWVGEVRQq3gkB",
+        titulo: "Estatística",
+        canal: "TecConcursos"
+      }
+    ] },
     { id: "excel", nome: "Excel", desc: "Fórmulas, tabelas dinâmicas e análise de dados na rotina contábil.", itens: [
         {
-            url: "https://www.youtube.com/watch?v=ZVURQLXZtIc&",
-            titulo: "Curso de Excel Essencial",
-            canal: "Curso em Vídeo",
-            capa: "ZVURQLXZtIc"
+          url: "https://www.youtube.com/watch?v=ZVURQLXZtIc&",
+          titulo: "Curso Excel #01 - Como surgiu o Excel?",
+          canal: "Curso em Vídeo"
+        },
+        {
+          url: "https://www.youtube.com/watch?v=yCRUWtDcrJQ",
+          titulo: "Curso Excel #02 - 10 Dicas e Truques para Excel",
+          canal: "Curso em Vídeo"
+        },
+        {
+          url: "https://www.youtube.com/watch?v=X4RLqvl0Ch8",
+          titulo: "Curso Excel #03 - Primeiros Passos no Excel",
+          canal: "Curso em Vídeo"
+        },
+        {
+          url: "https://www.youtube.com/watch?v=4dBE45hiDz8",
+          titulo: "Curso Excel #04 - Manipulando Arquivos",
+          canal: "Curso em Vídeo"
+        },
+        {
+          url: "https://www.youtube.com/watch?v=ZPQIm6_0Z5A",
+          titulo: "Curso Excel #05 - Selecionando Dados",
+          canal: "Curso em Vídeo"
+        },
+        {
+          url: "https://www.youtube.com/watch?v=nM3GqVDfREI",
+          titulo: "Curso Excel #06 - Formatando Planilhas",
+          canal: "Curso em Vídeo"
+        },
+        {
+          url: "https://www.youtube.com/watch?v=JF8lit7wrrM",
+          titulo: "Curso Excel #07 - Dicas para Formatação de Dados",
+          canal: "Curso em Vídeo"
+        },
+        {
+          url: "https://www.youtube.com/watch?v=8mV30b60YYQ",
+          titulo: "Curso Excel #08 - Classificação de Dados",
+          canal: "Curso em Vídeo"
+        },
+        {
+          url: "https://www.youtube.com/watch?v=_-2deLFAJeM",
+          titulo: "Curso Excel #09 - Fórmulas Básicas",
+          canal: "Curso em Vídeo"
+        },
+        {
+          url: "https://www.youtube.com/watch?v=boUzkJJNOPI",
+          titulo: "Curso Excel #10 - Funções do Excel (Parte 1)",
+          canal: "Curso em Vídeo"
+        },
+        {
+          url: "https://www.youtube.com/watch?v=jpuYGqeL7Ig",
+          titulo: "Curso Excel #11 - Funções do Excel (Parte 2)",
+          canal: "Curso em Vídeo"
+        },
+        {
+          url: "https://www.youtube.com/watch?v=LArhLXDKqNg",
+          titulo: "Curso Excel #12 - Formatação Condicional",
+          canal: "Curso em Vídeo"
         }
     ] },
-    { id: "powerbi", nome: "Power BI", desc: "Modelagem, medidas DAX e dashboards gerenciais.", itens: [] },
-    { id: "python", nome: "Python", desc: "Análise de dados e automação de rotinas com Python.", itens: []},
-    { id: "ssbi-sql", nome: "SSBI e SQL", desc: "Self-service BI e consultas SQL para extrair e cruzar dados.", itens: [] },
-    { id: "storytelling", nome: "Storytelling", desc: "Como transformar números em uma história clara para quem decide.", itens: [] }
+    { id: "powerbi", nome: "Power BI", desc: "Modelagem, medidas DAX e dashboards gerenciais.", itens: [
+      {
+        url: "https://www.youtube.com/watch?v=NP0PJgcIDkY",
+        titulo: "O que é Power BI?",
+        canal: "Hashtag Treinamentos"
+      },
+      {
+        url: "https://www.youtube.com/playlist?list=PLxjKFMYkZ9OfDG_LkQ3Txln5BqLZY5iac",
+        titulo: "Power BI",
+        canal: "Hashtag Treinamentos"
+      }
+    ] },
+    { id: "python", nome: "Python", desc: "Análise de dados e automação de rotinas com Python.", itens: [
+      {
+        url: "https://www.youtube.com/watch?v=-VeVq64Fgw0",
+        titulo: "Curso Completo de Python - do Zero ao Avançado (Masterclass)",
+        canal: "Bóson Treinamentos"
+      }
+    ]},
+    { id: "sql", nome: "SQL", desc: "Self-service BI e consultas SQL para extrair e cruzar dados.", itens: [
+      {
+        url: "https://youtube.com/playlist?list=PLLbQNZHBOJtZ1oAbve_kacS5nm9u1ULou&si=lgNSWBOZXfrCeLzT",
+        titulo: "Curso SQL Server",
+        canal: "Kamys Academy"
+      }
+    ] },
+    { id: "storytelling", nome: "Storytelling", desc: "Como transformar números em uma história clara para quem decide.", itens: [
+      {
+        url: "https://www.youtube.com/watch?v=ugQ5wg2DJPw",
+        titulo: "O Que é Storytelling?",
+        canal: "Elaborando Projetos - Sociais e Culturais"
+      },
+      {
+        url: "https://www.youtube.com/watch?v=ZAGhbUSQDf0",
+        titulo: "e-Talks | Como fazer apresentações inesquecíveis usando o Storytelling",
+        canal: "Endeavor Brasil"
+      },
+      {
+        url: "https://www.youtube.com/watch?v=OobAIl4vsUw",
+        titulo: "Storytelling | Como uma boa história pode inspirar e vender",
+        canal: "Erico Rocha"
+      }
+    ] }
   ];
   const ytInfo = url => {
     try {
@@ -232,7 +405,7 @@ GFCC0002|Estágio em Contabilidade|8|240|FCC034|`
   /* Portal e recursos (edite os dados) */
   const NEWS = [["19 dez", "Aviso", "Fim do período letivo - 2026.2"], ["06 jan", "Prazo", "Último dia para os docentes consolidarem as notas."], ["20 nov", "Feriado", "Dia Nacional de Zumbi e da Consciência Negra."], ["23 nov", "Evento", "Congresso UFBA 80"]];
   const FAQ = [["Como contabilizo as atividades complementares?", "Registre cada atividade com o certificado e entregue ao colegiado. As horas entram na disciplina de Atividades Complementares."], ["Posso cursar uma disciplina sem o pré-requisito?", "Não. A grade bloqueia disciplinas até que os pré-requisitos estejam concluídos, como no sistema da secretaria."], ["Como funciona o cálculo de créditos?", `Nesta ferramenta, cada disciplina vale 1 crédito (${DISC.length} no total). A porcentagem de conclusão é calculada pela carga horária.`], ["Onde peço declaração de matrícula?", "Você pode fazer isso na hora pelo portal do aluno (SIGAA). Se tiver qualquer dificuldade, é só mandar um e-mail para colegiadofcc@ufba.br."]];
-  const LINKS = [["Instagram do DACIC", "https://www.instagram.com/dacic.ufba/"], ["Canal de avisos no WhatsApp", "https://whatsapp.com/channel/0029Vb966OcEVccRb402v62t"], ["Comunidade do WhatsApp", "https://chat.whatsapp.com/LAAfAGs4dEb18i3B6zUuJo"], ["Cartilha do calouro", "https://drive.google.com/file/d/1F0lNMh0jEKCmFemkXWsV_GSt0gLKOA6A/view?usp=drive_link"], ["Planeje sua grade (Que Hora é Essa?)", "https://quehoraeessa.netlify.app/"]];
+  const LINKS = [["FCCUFBA - HUB Compartilhado", "https://drive.google.com/drive/folders/1aRBIm5GYO5PzIDyzsd2P2xZNcDH-gmDM?usp=sharing"], ["Instagram do DACIC", "https://www.instagram.com/dacic.ufba/"], ["Canal de avisos no WhatsApp", "https://whatsapp.com/channel/0029Vb966OcEVccRb402v62t"], ["Comunidade do WhatsApp", "https://chat.whatsapp.com/LAAfAGs4dEb18i3B6zUuJo"], ["Cartilha do calouro", "https://drive.google.com/drive/folders/1iUI_VxeqfQmnOauA0XZkqHQK_8uzyA75?usp=drive_link"], ["Planeje sua grade (Que Hora é Essa?)", "https://quehoraeessa.netlify.app/"]];
   const DOCS = ["Requerimento de aproveitamento de estudos", "Declaração de atividades complementares", "Modelo de relatório de estágio", "Solicitação de revisão de nota"];
   $("#news").innerHTML = NEWS.map(n => `<li><span class="date">${n[0]}</span><div><span class="badge">${n[1]}</span><p>${esc(n[2])}</p></div></li>`).join("");
   $("#faq").innerHTML = FAQ.map(f => `<details class="faq"><summary>${esc(f[0])}</summary><p>${esc(f[1])}</p></details>`).join("");
