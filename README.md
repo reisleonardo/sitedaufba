@@ -68,4 +68,4 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ---
 
-**Nota**: Este projeto não possui nenhuma relação oficial com a UFBA ou o FCCUFBA. É uma iniciativa independente do Diretório Acadêmico de Ciências Contábeis para facilitar a vida dos estudantes.
+**Nota**: Este projeto não possui nenhuma relação oficial com a UFBA ou a FCCUFBA. É uma iniciativa independente do Diretório Acadêmico de Ciências Contábeis para facilitar a vida dos estudantes.
